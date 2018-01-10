@@ -22,8 +22,8 @@ if [[ "$PASSENGER_ENTERPRISE" ]]; then
 else
 	## https://askubuntu.com/questions/428772/how-to-install-specific-version-of-some-package/428778
 	## Specify a specific version of nginx-common (nginx-extra dependency) to work on armhf architecture
-	run apt-get install -y nginx-common=1.10.3-0ubuntu0.16.04.2
-	run apt-get install -y nginx-extras passenger
+	#run apt-get install -y nginx-common=1.10.3-0ubuntu0.16.04.2
+	#run apt-get install -y nginx-extras passenger
 fi
 run cp /pd_build/config/30_presetup_nginx.sh /etc/my_init.d/
 run cp /pd_build/config/nginx.conf /etc/nginx/nginx.conf
